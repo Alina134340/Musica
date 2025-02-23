@@ -1,0 +1,66 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+button {
+    background-color: #007bff77;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0057b3c6;
+}
+
+/* Distribución de los botones en la galería */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos específicos para las interfaces */
+.inicio {
+    background-image: url('/assets/hk.gif'); /* Imagen de fondo para la interfaz de inicio */
+}
+
+.galeria {
+    background-image: url('/assets/fk.gif'); /* Imagen de fondo para la interfaz de la galería */
+}
